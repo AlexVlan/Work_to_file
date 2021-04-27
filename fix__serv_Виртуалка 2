@@ -16,6 +16,8 @@ hello world работает. Ищем дальше.
 Запустился контейнер в режиме демона, прикольно. docker run -d -it  php-fpm:5.6_09
 
 2. Входим в /bin/bash на машине с php в docker. Проверяем настройки msmtprc. /etc/msmtprc
+docker exec -it 464f29ec0dca /bin/bash
+
 Меняем ip на  10.16.0.102(адрес хостовой машины)
 Находим где адрес почты админа, он здесь /var/www/html/mail.php
 Меняем на свой. 
