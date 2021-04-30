@@ -27,3 +27,12 @@ docker exec -it 464f29ec0dca /bin/bash
 docker run --net=host  -d -it -p 9000:9000  php-fpm:5.6_09
 
  docker run  -d -it  -p 9000:9000  php-fpm:5.6_09
+Включил хождение трафика между интерфейсами, проверил firewalld, но пока все равно не срабатывает, почему-то появляется 
+<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.12.2</center>
+</body>
+</html> 
+Ищем дальше, nginx вроде в норме хотя можно настройть fast для php-fpm но он не видит этого контейнера
