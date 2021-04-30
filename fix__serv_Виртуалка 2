@@ -25,3 +25,5 @@ docker exec -it 464f29ec0dca /bin/bash
 
 
 docker run --net=host  -d -it -p 9000:9000  php-fpm:5.6_09
+
+ docker run  -d -it  -p 9000:9000  php-fpm:5.6_09
