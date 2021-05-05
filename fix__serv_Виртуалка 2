@@ -42,3 +42,4 @@ docker run --net=host  -d -it -p 9000:9000  php-fpm:5.6_09
 Ищем
 Доустановил net-tools для netstat
 Редактируем php.ini для /etc/msmtprc
+Смонтируем /var/www/html из докера в хост
