@@ -43,3 +43,5 @@ docker run --net=host  -d -it -p 9000:9000  php-fpm:5.6_09
 Доустановил net-tools для netstat
 Редактируем php.ini для /etc/msmtprc
 Смонтируем /var/www/html из докера в хост
+Получаем интересную ошибку, ну хоть что-то новое. [error] 101405#0: *4 upstream timed out (110: Connection timed out) while connecting to upstream, client: 127.0.0.1, server: php-docker.local, request: "GET /mail.php HTTP/1.1", upstream: "fastcgi://10.16.1.102:9000", host: "localhost"
+Я иду искать.
